@@ -6,7 +6,7 @@ while row_index < src.count do
   min_day = 100
   while element_index < src[row_index].count do
     #binding.pry
-    if src[row_index][element_index][0] <= min_day
+    if src[row_index][element_index] < min_day
       min_day = src[row_index][element_index] 
     end
     element_index += 1
